@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AgoraDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nV-f6-ost">
+                                <rect key="frame" x="146.5" y="64" width="121" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remote View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l45-6o-MLl">
+                                <rect key="frame" x="149.5" y="130" width="115" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aor-4K-37x">
+                                <rect key="frame" x="20" y="164" width="374" height="210"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="O6f-HB-fYf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddr-2t-s0L">
+                                <rect key="frame" x="20" y="535" width="374" height="210"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="9zW-EM-Ac1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xq-cA-SBU">
+                                <rect key="frame" x="163.5" y="425" width="87" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Leave"/>
+                                <connections>
+                                    <action selector="leaveButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QZK-p0-47O"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Local View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSY-wg-jwd">
+                                <rect key="frame" x="160" y="501" width="94" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8Y-8B-ic5">
+                                <rect key="frame" x="174.5" y="765" width="65" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                <state key="normal" title="Join"/>
+                                <connections>
+                                    <action selector="joinButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qkr-HN-38R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RSY-wg-jwd" firstAttribute="top" secondItem="8Xq-cA-SBU" secondAttribute="bottom" constant="30" id="5Qw-XR-hfp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Aor-4K-37x" secondAttribute="trailing" constant="20" id="8E2-TQ-dSg"/>
+                            <constraint firstItem="Ddr-2t-s0L" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8WR-wE-Npg"/>
+                            <constraint firstItem="A8Y-8B-ic5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EgQ-e9-yIa"/>
+                            <constraint firstItem="Ddr-2t-s0L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="FB9-nd-Kj4"/>
+                            <constraint firstItem="Aor-4K-37x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O1U-6D-RBA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ddr-2t-s0L" secondAttribute="trailing" constant="20" id="Rfc-Ou-TER"/>
+                            <constraint firstItem="Aor-4K-37x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VSp-TE-d9J"/>
+                            <constraint firstItem="8Xq-cA-SBU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bUu-6e-98t"/>
+                            <constraint firstItem="0nV-f6-ost" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="eOM-z2-HN9"/>
+                            <constraint firstItem="l45-6o-MLl" firstAttribute="top" secondItem="0nV-f6-ost" secondAttribute="bottom" constant="30" id="g9g-1J-XRS"/>
+                            <constraint firstItem="Ddr-2t-s0L" firstAttribute="top" secondItem="RSY-wg-jwd" secondAttribute="bottom" constant="10" id="gej-j2-jYo"/>
+                            <constraint firstItem="0nV-f6-ost" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hlq-4f-Sqy"/>
+                            <constraint firstItem="RSY-wg-jwd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ipB-s1-Dhc"/>
+                            <constraint firstItem="A8Y-8B-ic5" firstAttribute="top" secondItem="Ddr-2t-s0L" secondAttribute="bottom" constant="20" id="uV7-zA-IVP"/>
+                            <constraint firstItem="l45-6o-MLl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vRV-uh-Npj"/>
+                            <constraint firstItem="8Xq-cA-SBU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wM0-lv-cDv"/>
+                            <constraint firstItem="Aor-4K-37x" firstAttribute="top" secondItem="l45-6o-MLl" secondAttribute="bottom" constant="10" id="xfb-F8-A8l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="joinButton" destination="A8Y-8B-ic5" id="Nha-oZ-vWH"/>
+                        <outlet property="leaveButton" destination="8Xq-cA-SBU" id="y4M-tL-NJw"/>
+                        <outlet property="localView" destination="Ddr-2t-s0L" id="GjS-WZ-KuC"/>
+                        <outlet property="remoteView" destination="Aor-4K-37x" id="mI5-eg-plY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="81"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
